@@ -29,25 +29,32 @@ body{
     margin: auto;
     
     margin-top:50px;
-    position: relative;
+    
     
 }
 
 #first{
-    font-size:70px;
+    font-size:100px;
     color: #f4a53c;
-    text-align:center;
+    clear:right;
+    display: inline-block;
+    margin-left: 340px;
+    
+    
+    
+    
 
     
 }
 #sec{
-    font-size:70px;
+    font-size:100px;
     color: white;
+    display: inline-block;
+    
+    
 }
 
-#Name{
-    margin-left: 400px;
-}
+
 
 #about{
     font-size:50px;
@@ -145,7 +152,36 @@ hr {
     border-color: white;
   }
 
-  #gitHub{
-      width:20px;
-      height:20px;
+  .fab{
+      font-size: 200px;
+      color: white;
   }
+  .fas{
+    font-size: 200px;
+    color: white;
+}
+
+  .fab:hover{
+      color: #f4a53c;
+  }
+  .fas:hover{
+    color: #f4a53c;
+}
+
+#email{
+    color: black;
+
+}
+
+@media screen and (max-width: 900px){
+    #nav-mobile{
+        float: right;
+    }
+    #first{
+        margin-left: 0px;
+    }
+    #sec{
+        float:right;
+    }
+
+}

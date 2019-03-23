@@ -3,7 +3,8 @@
 <header>
     <!--Link for materialize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!--bootstrap Link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -11,19 +12,27 @@
 
     <!--Link for css-->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--Create a header for the page with my logo-->
+
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img id="logo" src="assets/logo.JPG" alt="logo"></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a id="contact" href="contact.html">Contact</a></li>
-                <li><a id="projects" href="projects.html">Projects</a></li>
-                <li><a id="index" href="index.html">About Me</a></li>
-            </ul>
-        </div>
+            <div class="col xl12">
+                <a href="#" class="brand-logo"><img id="logo" src="assets/logo.JPG" alt="logo"></a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">menu</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a id="contact" href="contact.html">Contact</a></li>
+                    <li><a id="projects" href="projects.html">Projects</a></li>
+                    <li><a id="index" href="index.html">About Me</a></li>
+                </ul>
+            </div>
     </nav>
+    </div>
+    <ul class="sidenav" id="mobile-links">
+        <li><a id="contact" href="contact.html">Contact</a></li>
+        <li><a id="projects" href="projects.html">Projects</a></li>
+        <li><a id="index" href="index.html">About Me</a></li>
+    </ul>
 </header>
 
 <body>
@@ -41,8 +50,67 @@
                         <hr id="line2">
                     </div>
                 </div>
-                
-                <a href="https://github.com/mwboct16" title="GitHub Profile" target="_blank"><i id="gitHub"  class="fab fa-github"></i></a>
+                <div class="row">
+                    <div class="col xl4">
+                        <a href="https://github.com/KylerYohn" title="GitHub Profile" target="_blank"><i id="gitHub"
+                                class="fab fa-github"></i></a>
+                    </div>
+                    <div class="col xl4">
+                        <a href="https://www.linkedin.com/in/kyler-yohn-61031311b/" title="GitHub Profile"
+                            target="_blank">
+                            <i class="fab fa-linkedin"></i></i></a>
+                    </div>
+                    <div class="col xl4">
+                        <a href="https://github.com/KylerYohn" title="GitHub Profile" target="_blank">
+                            <i class="fas fa-file-pdf"></i></a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col xl12">
+                        <ul class="collapsible" data-colapsible="expandable">
+                            <li>
+                                <div class="collapsible-header orange active"><i class="fas fa-user"
+                                        id="email"></i>Personal
+                                </div>
+                                <div class="collapsible-body white" id="email"><span>Phone Contact: (717)580-4933
+
+                                    </span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header orange active"><i class="fas fa-envelope-open-text"
+                                        id="email"></i>Email</div>
+                                <div class="collapsible-body white" id="personalInfo"><span>You can email me at:
+                                        kyyohn@gmail.com</span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header orange active"><i class="fas fa-stamp"
+                                        id="email"></i>Thank You</div>
+                                <div class="collapsible-body white"><span>Thank you for visiting my portfolio. If you
+                                        are looking to conversate or talk about future possibilities please email me or
+                                        call me!</span></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+                <script>
+                    $(document).ready(function () {
+                        $('.collapsible').collapsible();
+                    });
+                    $(document).ready(function () {
+                        $('.sidenav').sidenav();
+                    })
+                </script>
 
 
     </body>

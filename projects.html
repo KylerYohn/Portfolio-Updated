@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html>
 <header>
-    <!--Link for materialize-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!--Link for materialize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!--bootstrap Link-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--bootstrap Link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!--Link for css-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Link for css-->
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!--Create a header for the page with my logo-->
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img id="logo" src="assets/logo.JPG" alt="logo"></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a id="contact" href="contact.html">Contact</a></li>
-                <li><a id="projects" href="projects.html">Projects</a></li>
-                <li><a id="index" href="index.html">About Me</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!--Create a header for the page with my logo-->
+
+  <nav>
+    <div class="nav-wrapper">
+      <div class="col xl12">
+        <a href="#" class="brand-logo"><img id="logo" src="assets/logo.JPG" alt="logo"></a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">menu</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a id="contact" href="contact.html">Contact</a></li>
+          <li><a id="projects" href="projects.html">Projects</a></li>
+          <li><a id="index" href="index.html">About Me</a></li>
+        </ul>
+      </div>
+  </nav>
+  </div>
+  <ul class="sidenav" id="mobile-links">
+    <li><a id="contact" href="contact.html">Contact</a></li>
+    <li><a id="projects" href="projects.html">Projects</a></li>
+    <li><a id="index" href="index.html">About Me</a></li>
+  </ul>
 </header>
 
     <body>
@@ -153,5 +162,14 @@
             </div>
         </div>
 
-    </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        </body>
+        
+        
+        <script>
+          $(document).ready(function () {
+            $('.sidenav').sidenav();
+          })
+        </script>
 

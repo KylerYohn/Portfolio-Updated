@@ -1,78 +1,107 @@
 <!DOCTYPE html>
 <html>
 <header>
- <!--Link for materialize-->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!--Link for materialize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
- <!--bootstrap Link-->
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--bootstrap Link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
- <!--Link for css-->
- <link rel="stylesheet" type="text/css" href="style.css" >
+  <!--Link for css-->
+  <link rel="stylesheet" type="text/css" href="style.css">
 
- <!--Create a header for the page with my logo-->
- <div class="col xl12">
- <nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo"><img id="logo" src="assets/logo.JPG" alt="logo"></a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a id="contact" href="contact.html">Contact</a></li>
-      <li ><a id="projects" href="projects.html">Projects</a></li>
-      <li ><a id="index" href="index.html">About Me</a></li>
-    </ul>
+  <!--Create a header for the page with my logo-->
+
+  <nav>
+    <div class="nav-wrapper">
+      <div class="col xl12">
+        <a href="#" class="brand-logo"><img id="logo" src="assets/logo.JPG" alt="logo"></a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">menu</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a id="contact" href="contact.html">Contact</a></li>
+          <li><a id="projects" href="projects.html">Projects</a></li>
+          <li><a id="index" href="index.html">About Me</a></li>
+        </ul>
+      </div>
+  </nav>
   </div>
-</nav>
-</div>
+  <ul class="sidenav" id="mobile-links">
+    <li><a id="contact" href="contact.html">Contact</a></li>
+    <li><a id="projects" href="projects.html">Projects</a></li>
+    <li><a id="index" href="index.html">About Me</a></li>
+  </ul>
 </header>
 
 <body>
   <div class="width">
-  <div class="container" >
-    <div class="row" >
-      <img id ="Pic" src="assets/me.jpg" alt="picture of me">
-    </div>
-    
-    <div class="row" id="Name">
-      <div id="first">
-        Kyler
+    <div class="container">
+      <div class="row">
+        <img id="Pic" src="assets/me.jpg" alt="picture of me">
       </div>
-      <div id="sec">
-        Yohn
+
+      <div class="row" id="Name">
+        <div id="first">
+          Kyler
+        </div>
+        <div id="sec">
+          Yohn
+        </div>
+
       </div>
-    
+
+      <div class="col xl12" id="line">
+        <hr>
+      </div>
+
+
+      <div class="row">
+
+        <div class="col xl6 border1">
+          <div id="about">About Me</div>
+          <hr id="line1">
+          <p id="personal">Hi! My name is Kyler Yohn and welcome to my portfolio website. A little bit about me... I
+            went to a trade high school to learn Advertising, Art, and Design. I attended HACC (Harrisburg Area
+            Community College) for about 3 years. I originally went to school for chemical engineering, but found myself
+            really enjoying coding so I switched my career path. I like how in coding there are multiple approaches to
+            the same problems. I dabble in Rock Climbing, where the same thing happens, there are multiple problems to
+            one route but there are also multiple way to go about solving the same problems! I am also a musician, I
+            play the drums!</p>
+        </div>
+        <div class="col xl6 border2">
+          <div id="about2">Experience</div>
+          <hr id="line2">
+          <p id="personal">I have strong knowledge in front end technologies as well as some back end. I am well versed
+            in programing languages such as Javascript, HTML, CSS. I also have experience working with CSS and
+            Javascript libraries such as JQUERY, Bootstrap, and Materialize.</p>
+        </div>
+      </div>
+
+
     </div>
 
-    <div class="col xl12" id="line">
-      <hr>
-    </div>
-    
-    
-    <div class="row">
-      
-      <div class="col xl6 border1"  >
-        <div id="about">About Me</div>
-        <hr id="line1">
-          <p id="personal">Hi! My name is Kyler Yohn and welcome to my portfolio website. A little bit about me... I went to a trade high school to learn Advertising, Art, and Design.   I attended HACC (Harrisburg Area Community College) for about 3 years. I originally went to school for chemical engineering, but found myself really enjoying coding so I switched my career path. I like how in coding there are multiple approaches to the same problems. I dabble in Rock Climbing, where the same thing happens, there are multiple problems to one route but there are also multiple way to go about solving the same problems! I am also a musician, I play the drums!</p>
-      </div>
-      <div class="col xl6 border2" >
-        <div id="about2">Experience</div>
-        <hr id="line2">
-          <p id="personal">I have strong knowledge in front end technologies as well as some back end. I am well versed in programing languages such as Javascript, HTML, CSS. I also have experience working with CSS and Javascript libraries such as JQUERY, Bootstrap, and Materialize.</p>
-      </div>
-    </div>
-    
-   
+
+
+
+
+
   </div>
-
-
-
-
-
-
   </div>
-</div>
-  </body>
+</body>
 
 </body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+
+<script>
+  $(document).ready(function () {
+    $('.sidenav').sidenav();
+  })
+</script>
+
 </html>

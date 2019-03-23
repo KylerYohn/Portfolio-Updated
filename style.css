@@ -1,0 +1,151 @@
+.nav-wrapper {
+    background-color: black;
+}
+
+#logo{
+    height:55px;
+}
+
+#contact:hover{
+    color: #f4a53c; 
+}
+
+#projects:hover{
+    color: #f4a53c;
+}
+
+#index:hover{
+    color: #f4a53c;
+}
+
+body{
+    background-image: url("assets/connectwork.png");
+    background-repeat: repeat;
+}
+
+#body{
+    max-width: 60%;
+    height:auto;
+    margin: auto;
+    
+    margin-top:50px;
+    position: relative;
+    
+}
+
+#first{
+    font-size:70px;
+    color: #f4a53c;
+    text-align:center;
+
+    
+}
+#sec{
+    font-size:70px;
+    color: white;
+}
+
+#Name{
+    margin-left: 400px;
+}
+
+#about{
+    font-size:50px;
+}
+
+#line {
+    width:100%;
+    height: 20px;
+    color: black;
+}
+
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: dashed;
+    border-width: 4px;
+    border-color: #f4a53c;
+  }
+
+  #about{
+      font-size: 50px;
+      color: white;
+      
+      padding: 0px;
+  }
+  #about2{
+    font-size: 50px;
+    color: #f4a53c;
+    padding: 0px;
+}
+
+  #personal{
+      color: white;
+      
+      
+      
+  }
+
+  .border1{
+     border-width: 2px;
+     border-style: solid;
+     border-color: white;
+     margin-right: 5px;
+  }
+
+  .border2{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f4a53c;
+    margin-right: 5px;
+    
+ }
+  
+ .width{
+     max-width: 80%;
+     margin:auto;
+     margin-top:100px;
+ }
+
+ #img{
+     width:360px;
+     height:360px;
+ }
+
+ #Pic{
+     border-radius: 50%;
+    width:400px;
+    height:400px;
+    margin: auto;
+ }
+
+ #line1 { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: ridge;
+    border-width: 2px;
+    border-color: #f4a53c;
+  }
+
+  #line2 { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: ridge;
+    border-width: 2px;
+    border-color: white;
+  }
+
+  #gitHub{
+      width:20px;
+      height:20px;
+  }
